@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
    
-    'HelloDjangoApp',
+    'HelloDjangoApp',  #Adding the app to the list tells the Django project that there's a folder of that name containing templates --hjoab
     # Other entries...
 ]
 
@@ -62,7 +62,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [],
-        'APP_DIRS': True,
+        'APP_DIRS': True,     # set to True to search templates in subfolders of the app   --hjoab
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
